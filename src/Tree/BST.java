@@ -3,13 +3,13 @@ package Tree;
 
 public class BST {
 
-    TreeNode root;
+    public TreeNode root;
 
-    BST() {
+    public BST() {
         root = null;
     }
 
-    void insert(int value) {
+    public void insert(int value) {
         root = insertRec(root, value);
     }
 

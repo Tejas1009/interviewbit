@@ -14,10 +14,21 @@ public class demo {
         return b.toString();
     }
 
+    public static int addition(int a, int b) {
+        return a + b;
+    }
+
     public static void main(String[] args) {
-        int mask = 0x000F;
+
+        System.out.println(addition(5, 5));
+        System.out.println(addition(5, 10));
+
+
+        /*        int mask = 0x000F;
         int value = 0x222;
-        System.out.println(value & mask);
+        System.out.println(value & mask);*/
+
+
 
       /* double d = 10.0/-0;
        if(d==Double.POSITIVE_INFINITY){

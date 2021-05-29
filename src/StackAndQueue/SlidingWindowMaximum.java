@@ -1,9 +1,6 @@
 package StackAndQueue;
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.DelayQueue;
 
 /*Given an array of integers A. There is a sliding window of size B which
