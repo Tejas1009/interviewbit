@@ -41,6 +41,6 @@ public class MultiplyStrings {
 
     public static void main(String[] args) {
         MultiplyStrings ms = new MultiplyStrings();
-        System.out.println(ms.multiply("31243242535342", "0"));
+        System.out.println(ms.multiply("18", "12"));
     }
 }

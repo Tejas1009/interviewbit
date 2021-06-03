@@ -48,6 +48,6 @@ public class ReverseTheString {
 
     public static void main(String[] args) {
         ReverseTheString rts = new ReverseTheString();
-        System.out.println(rts.solve("the sky is blue   "));
+        System.out.println(rts.solve("  the sky is blue   "));
     }
 }

@@ -3,13 +3,25 @@ package Demo;
 public class ValidateIfNumberIsInPowerOf2 {
     public static void main(String[] args) {
 //        System.out.println(getBits(10));
-        System.out.println(power(2, 2));
+        //System.out.println(power(2, 3));
+        //System.out.println(getHighBits(7));
+        System.out.println(check(7));
 
     }
 
+    //check if number is power of to
     public static boolean check(int n) {
         if (n == 0) return false;
         return (n & (n - 1)) == 0;
+    }
+
+    public static int getHighBits(int n) {
+        int cnt = 0;
+        while (n > 0) {
+            if ((n & 1) == 1) cnt++;
+            n = n >> 1;
+        }
+        return cnt;
     }
 
     public static int getBits(int n) {
