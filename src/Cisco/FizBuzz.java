@@ -109,6 +109,32 @@ public class FizBuzz {
     }
 
     //_____________
+
+    public static int efficientJanitor2(float[] arr) {
+        int limit = 3;
+        int n = arr.length;
+        Arrays.sort(arr);
+
+        boolean[] check = new boolean[n];
+        int count = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            if (check[i]) continue;
+            check[i] = true;
+            count++;
+
+            float remain = (limit - arr[i]);
+            for (int j = i - 1; j >= 0; j--) {
+                if (!check[j] && arr[j] <= remain) {
+                    remain = (remain - arr[j]);
+                    check[j] = true;
+                    // break;  // add this if  maximum items = 2
+                }
+            }
+        }
+        System.out.println(count);
+        return count;
+    }
+
     public static int efficientJanitor(List<Float> weight) {
         // Write your code here
         Collections.sort(weight);
@@ -127,7 +153,7 @@ public class FizBuzz {
             count++;
 
         }
-        System.out.println(count);
+        //    System.out.println(count);
         return count;
     }
 
@@ -150,17 +176,24 @@ public class FizBuzz {
     }
 
     public static void main(String[] args) throws IOException {
-        //countProperFractions(9);
         ArrayList<Float> w = new ArrayList<>();
         //1.01. 1.991, 1.32, 1.4
+/*        w.add((float) 1);
         w.add((float) 1);
         w.add((float) 1);
         w.add((float) 1);
-        w.add((float) 1);
-        w.add((float) 1);
-        efficientJanitor(w);
+        w.add((float) 1);*/
+        w.add((float) 1.01);
+        w.add((float) 1.991);
+        w.add((float) 1.32);
+        w.add((float) 1.4);
+
+        //efficientJanitor(w);
+        float[] ww = {(float) 1, (float) 1, (float) 1, (float) 1, (float) 1};
+        //efficientJanitor2(ww);
         //getSumOfDoubleBasePalindromes(5);
-        //perfectSubstring("1221221121", 3);
+        perfectSubstring("1221221121", 3);
         //howMany(" )}OJR 92ww. z )UPl 49e ]S  g. zrZEnQ  D. FoKp ]ow 1EceB 3oK }w ]CA? L 3LPbDN! trqJY 0sBmm. Nwn");
+        //countProperFractions(9);
     }
 }
