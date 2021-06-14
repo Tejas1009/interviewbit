@@ -52,6 +52,6 @@ public class Permutations {
     public static void main(String[] args) {
         Permutations p = new Permutations();
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 3));
-        p.permute(arr);
+        System.out.println(p.permute(arr));
     }
 }
