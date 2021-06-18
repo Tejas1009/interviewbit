@@ -84,6 +84,6 @@ public class RemoveConsecutiveCharacters {
 
     public static void main(String[] args) {
         RemoveConsecutiveCharacters r = new RemoveConsecutiveCharacters();
-        System.out.println(r.solve("abcddcbsa", 2));
+        System.out.println(r.solve("aabbccd", 2));
     }
 }

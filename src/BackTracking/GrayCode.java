@@ -33,6 +33,6 @@ public class GrayCode {
 
     public static void main(String[] args) {
         GrayCode gc = new GrayCode();
-        gc.grayCode(0);
+        gc.grayCode(4);
     }
 }
