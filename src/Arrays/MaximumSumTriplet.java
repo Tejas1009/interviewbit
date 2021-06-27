@@ -1,3 +1,5 @@
+package Arrays;
+
 public class MaximumSumTriplet {
     class Triplet {
         int x, y, sum;

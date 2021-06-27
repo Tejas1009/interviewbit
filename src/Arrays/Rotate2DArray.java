@@ -1,14 +1,21 @@
+package Arrays;
+
 import java.util.ArrayList;
 
 public class Rotate2DArray {
 
     public static void reverse(ArrayList<ArrayList<Integer>> a) {
-        /*int arr[][] = new int[a.size()][a.size()];
-        for (int i = 0; i < a.size(); i++) {
-            for (int j = 0; j < a.size(); j++) {
-                arr[i][j] = a.get(i).get(j);
-            }
-        }*/
+        //step 1 : transpose i.e convert row to column
+        //example:
+        //  step 1:
+        //      1 2 3   ->  1 4 7
+        //      4 5 6   ->  2 5 8
+        //      7 8 9   ->  3 6 9
+        //step 2 : reverse row by row
+        //      7 4 1
+        //      8 5 2
+        //      9 6 3
+
         for (int i = 0; i < a.size(); i++) {
             for (int j = i; j < a.size(); j++) {
                 if (i != j) {
