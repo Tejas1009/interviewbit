@@ -16,14 +16,15 @@ public class Test {
 
 
     public static void main(String[] args) {
-/*        hack2 h = new hack2();
+        hack2 h = new hack2();
         try {
             h.hack_method();
+            return;
         } catch (Exception e) {
             System.out.println("hello");
         } finally {
             System.out.println("Hi");
-        }*/
+        }
 
     }
 }
