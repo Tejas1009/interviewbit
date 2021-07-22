@@ -2,7 +2,6 @@ package Others;
 
 public class Fibonacci {
     //ip: 4
-
     //1
     //2
     //3

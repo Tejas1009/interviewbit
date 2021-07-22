@@ -16,7 +16,7 @@ class Y extends X {
 
 class A {
 
-    public X add() throws StackOverflowError {
+    public X add() throws ClassNotFoundException {
         X x = new X();
         return x;
     }
@@ -24,7 +24,7 @@ class A {
 
 public class TestInheritanceException extends A {
 
-    public Y add() throws Error {
+    public Y add() throws NullPointerException {
         Y x = new Y();
         return x;
     }
