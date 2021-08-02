@@ -71,6 +71,7 @@ public class SlidingWindowMaximum {
     public static void main(String[] args) {
         SlidingWindowMaximum s = new SlidingWindowMaximum();
         int arr[] = {1, 3, -1, -3, 5, 3, 6, 7};
-        s.slidingMaximum(arr, 3);
+        int r[] = s.slidingMaximum(arr, 3);
+        Arrays.stream(r).forEach(System.out::print);
     }
 }

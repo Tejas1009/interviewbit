@@ -46,7 +46,7 @@ public class Dijkstra {
             System.out.println();
             for (Map.Entry<Integer, Integer> entry : adj.get(r.v).entrySet()) {
                 if (!visited[entry.getKey()]) {
-                    pq.add(new Pair(entry.getKey(), entry.getValue() + r.wsf, r.psf + entry.getKey()));
+                    pq.add(new Pair(entry.getKey(), entry.getValue() + r.wsf, r.psf + "-" + entry.getKey()));
                 }
             }
         }
