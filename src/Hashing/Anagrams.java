@@ -3,7 +3,8 @@ package Hashing;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/*Given an array of strings, return all groups of strings that are anagrams. Represent a group by a list of integers representing the index in the original list. Look at the sample case for clarification.
+/*Given an array of strings, return all groups of strings that are anagrams.
+Represent a group by a list of integers representing the index in the original list. Look at the sample case for clarification.
 
         Anagram : a word, phrase, or name formed by rearranging the letters of another, such as 'spar', formed from 'rasp'
         Note: All inputs will be in lower-case.

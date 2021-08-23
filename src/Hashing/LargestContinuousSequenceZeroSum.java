@@ -1,15 +1,11 @@
 package Hashing;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
 /*Find the largest continuous sequence in a array which sums to zero.
-
         Example:
-
-
         Input:  {1 ,2 ,-2 ,4 ,-4}
         Output: {2 ,-2 ,4 ,-4}
 
@@ -44,8 +40,8 @@ public class LargestContinuousSequenceZeroSum {
 
     public static void main(String[] args) {
         LargestContinuousSequenceZeroSum l = new LargestContinuousSequenceZeroSum();
-        //ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(2, 8, -3, -5, 2, -4, 6, 1, 2, 1, -3, 4));
-        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(0, 22, 7, 21, -11, -6, -7, -16, -2));
-        l.lszero(arr);
+        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, -2, 4, -4));
+        //ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(0, 22, 7, 21, -11, -6, -7, -16, -2));
+        System.out.println(l.lszero(arr));
     }
 }

@@ -32,6 +32,6 @@ public class GenerateBrackets {
     public static void main(String[] args) {
         generateBracket(2);
         System.out.println("-----------------------");
-        generateBracket(3);
+//        generateBracket(3);
     }
 }

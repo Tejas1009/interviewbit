@@ -4,30 +4,18 @@ import java.util.*;
 /*Problem Description
 
         Given two equally sized 1-D arrays A, B containing N integers each.
-
         A sum combination is made by adding one element from array A and another element of array B.
-
         Return the maximum C valid sum combinations from all the possible sum combinations.
-
-
 
         Problem Constraints
         1 <= N <= 105
-
         1 <= A[i] <= 103
-
         1 <= C <= N
-
-
 
         Input Format
         First argument is an one-dimensional integer array A of size N.
-
         Second argument is an one-dimensional integer array B of size N.
-
         Third argument is an integer C.
-
-
 
         Output Format
         Return a one-dimensional integer array of size C denoting the top C maximum sum combinations.
@@ -35,9 +23,6 @@ import java.util.*;
         NOTE:
 
         The returned array must be sorted in non-increasing order.
-
-
-
         Example Input
         Input 1:
 
