@@ -31,7 +31,7 @@ class AXB {
 public class MethodOverloadingTest {
     public static void main(String[] args) {
         AXB a = new AXB();
-        a.m1(1.1f);
+        a.m1(1);
         int i = 10;
         a.test(i++, i++, i++);
     }

@@ -35,10 +35,6 @@ class Employee {
 public class ClassNotFound implements i1 {
 
     public static void main(String[] args) {
-        int n = 3;
-        //011
-        int i = 1 << 3;
-        //System.out.println((n | i));
         HashMap<Employee, Integer> map = new HashMap<>();
         map.put(new Employee(1, "A"), 1);
         map.put(new Employee(1, "A"), 1);

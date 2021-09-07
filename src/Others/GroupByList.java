@@ -1,6 +1,7 @@
 package Others;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 class Employee12 {
@@ -51,5 +52,7 @@ public class GroupByList {
             System.out.println(k + "-" + v.size());
         });
         System.out.println("------------------------");
+        Map<String, Employee12> map = list.stream().collect(Collectors.toMap(Employee12::getDept, Function.identity()));
+        Map<Employee12, Employee12> map2 = list.stream().collect(Collectors.toMap(Function.identity(), Function.identity()));
     }
 }

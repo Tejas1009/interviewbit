@@ -12,19 +12,19 @@ class User implements Comparable<User> {
     }
 
     @Override
-    public int hashCode() {
-        return this.id;
+    public int compareTo(User o) {
+        return this.name.compareTo(o.name);
     }
 
     @Override
     public boolean equals(Object obj) {
-        User o = (User) obj;
-        return this.name == o.name;
+        User that = (User) obj;
+        return this.name.equals(that.name);
     }
 
     @Override
-    public int compareTo(User o) {
-        return this.name.compareTo(o.name);
+    public int hashCode() {
+        return this.id;
     }
 }
 
@@ -32,7 +32,14 @@ public class TestSet {
     public static void main(String[] args) {
         Set<User> set = new TreeSet<>();
         set.add(new User(1, "abc"));
-        set.add(new User(2, "abc"));
-        System.out.println(set.size());
+        set.add(new User(1, "abca"));
+        //System.out.println(set.size());
+
+        Map<User, Integer> map = new HashMap<>();
+        User u1 = new User(1, "abc");
+        User u2 = new User(1, "abc");
+        map.put(u1, 1);
+        map.put(u2, 1);
+        System.out.println(map.size());
     }
 }

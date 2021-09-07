@@ -14,7 +14,7 @@ public class TestTreeSet {
 
         @Override
         public int compareTo(Employee o) {
-            return this.id - o.id;
+            return o.id - this.id;
         }
     }
 

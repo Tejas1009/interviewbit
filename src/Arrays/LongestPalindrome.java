@@ -1,3 +1,5 @@
+package Arrays;
+
 public class LongestPalindrome {
 
     static String longestPalSubstr(String str) {
