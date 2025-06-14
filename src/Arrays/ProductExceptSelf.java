@@ -37,21 +37,23 @@ import java.util.Arrays;
  */
 public class ProductExceptSelf {
     public static void main(String[] args) {
-        int[] nums = {2, 3, 5, 0};
+        int[] nums = {1, 2, 3, 4};
         int[] result = productExceptSelf(nums);
         Arrays.stream(result).forEach(System.out::println);
     }
 
     public static int[] productExceptSelf(int[] nums) {
-        int[] result = new int[nums.length];
+        int result[] = new int[nums.length];
+        int left = 1;
         result[0] = 1;
         for (int i = 1; i < nums.length; i++) {
-            result[i] = result[i - 1] * nums[i - 1];
+            left *= nums[i - 1];
+            result[i] = left;
         }
-        int postFix = 1;
-        for (int i = nums.length - 1; i >= 0; i--) {
-            result[i] = result[i] * postFix;
-            postFix = postFix * nums[i];
+        int right = 1;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            right *= nums[i + 1];
+            result[i] *= right;
         }
         return result;
     }
